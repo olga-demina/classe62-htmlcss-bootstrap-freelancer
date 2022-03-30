@@ -1,0 +1,79 @@
+/* VARIABLES */
+:root {
+    /* Colors */
+    --ms_primary-color: #1abc9c;
+    --ms_secondary-color: #2c3e50;
+    --ms_secondary-color-light: #3a546d;
+}
+
+/* COMMON */
+html {
+    font-size: 100%;
+}
+
+.ms_container-small {
+    max-width: 1170px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.ms_bg-primary {
+    background-color: var(--ms_primary-color);
+    color: white;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    background-color: var(--ms_secondary-color);
+}
+
+.ms_brand-wrapper {
+    background-color: lightcoral;
+}
+
+.ms_menu-wrapper {
+    background-color: blue;
+}
+
+/* MAIN */
+.ms_section {
+    padding: 2rem 0;
+}
+
+.ms_title-wrapper {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* jumbotron */
+.ms_jumbotron {
+    text-align: center;
+}
+
+/* Portfolio */
+.ms_portfolio-item {
+    background-color: blueviolet;
+    height: 200px;
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+}
+
+.footer-top {
+    background-color: var(--ms_secondary-color-light);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-bottom {
+    background-color: var(--ms_secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
