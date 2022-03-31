@@ -29,16 +29,40 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-10 col-md-6">
-            <div class="ms_brand-wrapper">Brand</div>
-          </div>
-          <div class="col-2 col-md-6">
-            <nav class="ms_menu-wrapper text-end">Menu</nav>
+      <nav class="navbar-dark ms_navbar navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">Start bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase active"
+                  aria-current="page"
+                  href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!-- /HEADER -->
 
@@ -47,9 +71,14 @@
       <!-- jumbotron -->
       <section class="ms_section ms_bg-primary ms_jumbotron">
         <div class="container">
-          <h1>Titolo</h1>
-          <div>- Stella -</div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <img src="img/avatar.svg" alt="Bootstrap avatar" />
+          <h1 class="text-uppercase">Start bootstrap</h1>
+          <div class="star">
+            <i class="fas fa-star"></i>
+          </div>
+          <h4 class="text-uppercase">
+            Graphic artist - Web designer - illustrato
+          </h4>
         </div>
       </section>
 
@@ -58,26 +87,40 @@
         <div class="container">
           <div class="ms_title-wrapper">
             <h2>Portfolio</h2>
-            <div>- Stella -</div>
+            <div class="star">
+              <i class="fas fa-star"></i>
+            </div>
           </div>
           <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item"></div>
+              <div class="ms_portfolio-item">
+                <img src="img/cabin.png" alt="" />
+              </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item"></div>
+              <div class="ms_portfolio-item">
+                <img src="img/cake.png" alt="" />
+              </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item"></div>
+              <div class="ms_portfolio-item">
+                <img src="img/circus.png" alt="" />
+              </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item"></div>
+              <div class="ms_portfolio-item">
+                <img src="img/game.png" alt="" />
+              </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item"></div>
+              <div class="ms_portfolio-item">
+                <img src="img/safe.png" alt="" />
+              </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item"></div>
+              <div class="ms_portfolio-item">
+                <img src="img/submarine.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -89,7 +132,9 @@
           <div class="container-fluid">
             <div class="ms_title-wrapper">
               <h2>About</h2>
-              <div>- Stella -</div>
+              <div class="star">
+                <i class="fas fa-star"></i>
+              </div>
             </div>
             <div class="row gy-4">
               <div class="col-12 col-md-6">
@@ -105,6 +150,12 @@
                 velit dolor incidunt voluptate aut?
               </div>
             </div>
+            <div class="mt-4 text-center">
+              <a class="btn ms_btn-primary" href="#">
+                <i class="fas fa-download"></i>
+                Download
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -114,14 +165,55 @@
         <div class="ms_container-small">
           <div class="container-fluid">
             <div class="ms_title-wrapper">
-              <h2>About</h2>
-              <div>- Stella -</div>
+              <h2>Contact me</h2>
+              <div class="star">
+                <i class="fas fa-star"></i>
+              </div>
             </div>
             <div class="contact-form">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              doloremque odio rerum corrupti fugiat earum veniam voluptate at
-              qui inventore. Dolorem, cupiditate aut. Velit repudiandae quos
-              sapiente quae quod amet!
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                  />
+                  <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="email"
+                    placeholder="Email"
+                  />
+                  <label for="email" class="form-label">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    aria-describedby="phone"
+                    placeholder="Phone number"
+                  />
+                  <label for="phone" class="form-label">Phone number</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    aria-describedby="message"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                  <label for="message" class="form-label">Message</label>
+                </div>
+
+                <button type="submit" class="btn ms_btn-primary">Send</button>
+              </form>
             </div>
           </div>
         </div>
@@ -133,17 +225,43 @@
     <footer>
       <div class="footer-top">
         <div class="container">
-         <div class="row">
-             <div class="col-12 col-md-4">footer text</div>
-             <div class="col-12 col-md-4">footer text</div>
-             <div class="col-12 col-md-4">footer text</div>
-         </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <address>
+                <h4 class="text-uppercase">Location</h4>
+                <p>2215 John Daniel Drive Clark, MO 54243</p>
+              </address>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="ms_footer-item">
+                <h4 class="text-uppercase">Around web</h4>
+                <ul class="ms_social">
+                  <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="ms_footer-item">
+                <h4 class="text-uppercase">About freelancer</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempora sequi <a class="ms_link" href="">Start bootstrap</a> </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="container">
-            Testo
-        </div>
+        <div class="container">Copright &copy; your website 2019</div>
       </div>
     </footer>
     <!-- /FOOTER -->

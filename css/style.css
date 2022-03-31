@@ -11,6 +11,10 @@ html {
     font-size: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 .ms_container-small {
     max-width: 1170px;
     width: 60%;
@@ -23,12 +27,11 @@ html {
 }
 
 /* HEADER */
-header {
-    height: 80px;
-    line-height: 80px;
+.ms_navbar {
     color: white;
     background-color: var(--ms_secondary-color);
 }
+
 
 .ms_brand-wrapper {
     background-color: lightcoral;
@@ -37,6 +40,53 @@ header {
 .ms_menu-wrapper {
     background-color: blue;
 }
+
+/* star */
+.star {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.star::before,
+.star::after {
+    content: '';
+    display: inline-block;
+    width: 4rem;
+    height: 3px;
+    background-color: black;
+    vertical-align: super;
+}
+
+.ms_bg-primary .star::before,
+.ms_bg-primary .star::after {
+    background-color: white;
+}
+
+/* buttons */
+.ms_btn-primary {
+    background-color: var(--ms_primary-color);
+    border: 1px solid white;
+    color: white;
+}
+
+.ms_btn-primary:hover {
+    background-color: white;
+    color: var(--ms_primary-color);
+    border-color: var(--ms_primary-color);
+}
+
+.ms_link {
+    color: var(--ms_primary-color);
+    text-decoration: none;
+}
+
+.ms_link:hover {
+    color: var(--ms_primary-color);
+    text-decoration: underline;
+}
+
+
+
 
 /* MAIN */
 .ms_section {
@@ -54,10 +104,33 @@ header {
     text-align: center;
 }
 
+.ms_jumbotron img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+
 /* Portfolio */
 .ms_portfolio-item {
-    background-color: blueviolet;
-    height: 200px;
+  border-radius: 1rem; 
+  overflow: hidden;
+}
+
+/* Contac form */
+.contact-form .form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.contact-form .form-floating>label {
+    padding-left: 0;
+}
+
+.contact-form textarea {
+    min-height: 150px;
 }
 
 /* FOOTER */
@@ -70,6 +143,27 @@ footer {
     background-color: var(--ms_secondary-color-light);
     padding: 1rem 0;
     text-align: center;
+}
+
+.ms_social {
+    list-style: none;
+    padding: 0;
+}
+
+.ms_social li {
+    display: inline-block;
+    margin: 0 .2rem;
+}
+
+.ms_social a {
+    color: inherit;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .footer-bottom {
